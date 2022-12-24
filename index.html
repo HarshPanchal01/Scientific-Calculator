@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+            <div class="output">
+                <input type="text" placeholder="0" id="screen">
+            </div>
+            <div class="grid">
+                <div class="row">
+                    <button onclick="screen.value=''">AC</button>
+                    <button onclick="backspc()">DEL</button>
+                    <button data-button>(</button>
+                    <button data-button>)</button>
+                    <button data-button>%</button>
+                    <button data-button>÷</button>
+                </div>
+                <div class="row">
+                    <button onclick="sin()">sin</button>
+                    <button onclick="sqrt()">√</button>
+                    <button data-button>7</button>
+                    <button data-button>8</button>
+                    <button data-button>9</button>
+                    <button data-button>×</button>
+                </div>
+                <div class="row">
+                    <button onclick="cos()">cos</button>
+                    <button onclick="pow()">x▫</button>
+                    <button data-button>4</button>
+                    <button data-button>5</button>
+                    <button data-button>6</button>
+                    <button data-button>+</button>
+                </div>
+                <div class="row">
+                    <button onclick="tan()">tan</button>
+                    <button onclick="fact()">x!</button>
+                    <button data-button>1</button>
+                    <button data-button>2</button>
+                    <button data-button>3</button>
+                    <button data-button>-</button>
+                </div>
+                <div class="row">
+                    <button onclick="log()">log</button>
+                    <button onclick="log()">ln</button>
+                    <button data-button>0</button>
+                    <button data-button>.</button>
+                    <button onclick="pi()">𝝅</button>
+                    <button onclick="screen.value=eval(screen.value)">=</button>
+                </div> 
+            </div> 
+    </div>
+</body>
+</html>
