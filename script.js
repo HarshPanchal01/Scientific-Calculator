@@ -14,6 +14,12 @@ buttons.forEach(button => {
     });
 });
 
+screen.addEventListener('keyup', (e) => {
+    if (e.keyCode === 13) {
+        screen.value = eval(screen.value);
+    }
+});
+
 function sin() {
     screen.value = Math.sin(screen.value);
 }
@@ -58,3 +64,5 @@ function fact() {
 function backspc() {
     screen.value = screen.value.substr(0, screen.value.length - 1);
 }
+
+
