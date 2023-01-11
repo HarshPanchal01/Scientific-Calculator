@@ -5,14 +5,14 @@
 }
 
 body {
-    padding: 0;
-    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    user-select: none;
-    background: linear-gradient(to right, rgb(255, 25rgb(255, 255, 255)107, 187));
+    height: 100vh;
+    margin: 0;
+    font-family: courier, sans-serif;
+    font-size: 120%;
+    background-image: url('https://source.unsplash.com/1600x900/?calculator');
 }
 
 .container {
@@ -20,6 +20,7 @@ body {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px white;
+    background: rgba(0, 0, 0, 0.938);
 }
 
 .content {
@@ -40,7 +41,6 @@ body {
     margin: 5px;
     border-radius: 4px;
     transition: .1s;
-    box-shadow: 5px 5px 8px #00000020, -5px -5px 8px #ffff;
 }
 
 .row > button:hover {
